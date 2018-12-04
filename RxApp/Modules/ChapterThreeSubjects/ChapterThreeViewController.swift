@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ChapterThreeViewController.swift
 //  RxApp
 //
 //  Created by Suyogya Ratna Tamrakar on 12/2/18.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ChapterThreeViewController: UIViewController {
+
+    var viewModel: ChapterThreeViewModel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        title = "Chapter Three - Subjects"
+
     }
 
-
 }
-
