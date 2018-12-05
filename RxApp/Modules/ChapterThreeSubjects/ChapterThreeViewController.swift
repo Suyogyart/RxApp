@@ -8,6 +8,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 
 class ChapterThreeViewController: UIViewController {
 
@@ -65,6 +66,75 @@ class ChapterThreeViewController: UIViewController {
         
         
         //Behavior Subject
+        example(of: "Behavior Subject") {
+            let subject = BehaviorSubject(value: "Initial Value")
+            
+            subject.onNext("X")
+            
+            subject.subscribe {
+                print(label: "1)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+            
+            subject.onError(MyError.anError)
+            
+            subject.subscribe {
+                print(label: "2)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+        }
+        
+        // Replay Subject
+        example(of: "Replay Subject") {
+            let subject = ReplaySubject<String>.create(bufferSize: 2)
+            
+            subject.onNext("1")
+            subject.onNext("2")
+            subject.onNext("3")
+            
+            subject.subscribe {
+                print(label: "1)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+            
+            subject.subscribe {
+                print(label: "2)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+            
+            subject.onNext("4")
+            
+            subject.onError(MyError.anError)
+            subject.dispose()
+            
+            subject.subscribe {
+                print(label: "3)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+        }
+        
+        // Variable
+        example(of: "Variable") {
+            let variable = Variable("Initial Value")
+            variable.value = "New Initial Value"
+            
+            variable.asObservable().subscribe {
+                print(label: "1)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+        }
+        
+        // Behavior Relay
+        example(of: "Behavior Relay") {
+            let relay = BehaviorRelay<String>(value: "Initial Value")
+            relay.accept("New Initial Value")
+            
+            relay.subscribe {
+                print(label: "1)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+            
+            relay.accept("1")
+            
+            relay.subscribe {
+                print(label: "2)", event: $0)
+            }.disposed(by: viewModel.disposeBag)
+            
+            relay.accept("2")
+        }
     }
 
 }

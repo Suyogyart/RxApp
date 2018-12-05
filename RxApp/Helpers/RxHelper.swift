@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 public func example(of description: String, action: () -> Void) {
     print("\n--- Example of:", description, "---")
@@ -15,4 +16,8 @@ public func example(of description: String, action: () -> Void) {
 
 enum MyError: Error {
     case anError
+}
+
+func print<T: CustomStringConvertible>(label: String, event: Event<T>) {
+    print(label, (event.element ?? event.error) ?? event)
 }
