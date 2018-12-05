@@ -124,6 +124,65 @@
             </objects>
             <point key="canvasLocation" x="3238" y="126"/>
         </scene>
+        <!--Combinestagram View Controller-->
+        <scene sceneID="UYu-r3-4Vh">
+            <objects>
+                <viewController storyboardIdentifier="CombinestagramViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NB8-VP-hF7" customClass="CombinestagramViewController" customModule="RxApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jJq-Eo-cc9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ba-AV-X4J" customClass="CollageView" customModule="CollageView">
+                                <rect key="frame" x="40" y="104" width="295" height="250"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="2Ff-Tb-I7q"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="A4N-BU-HRQ">
+                                <rect key="frame" x="40" y="394" width="295" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T13-xs-3EX">
+                                        <rect key="frame" x="0.0" y="0.0" width="127.5" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n5P-d6-bR6">
+                                        <rect key="frame" x="167.5" y="0.0" width="127.5" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Save">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="A4N-BU-HRQ" firstAttribute="top" secondItem="9Ba-AV-X4J" secondAttribute="bottom" constant="40" id="0vz-RT-vIQ"/>
+                            <constraint firstItem="A4N-BU-HRQ" firstAttribute="leading" secondItem="9Ba-AV-X4J" secondAttribute="leading" id="LUa-JF-iLW"/>
+                            <constraint firstItem="9Ba-AV-X4J" firstAttribute="centerX" secondItem="jJq-Eo-cc9" secondAttribute="centerX" id="P7M-HP-WyE"/>
+                            <constraint firstItem="9Ba-AV-X4J" firstAttribute="top" secondItem="DzZ-j6-at5" secondAttribute="top" constant="40" id="SVY-Z5-00m"/>
+                            <constraint firstItem="A4N-BU-HRQ" firstAttribute="trailing" secondItem="9Ba-AV-X4J" secondAttribute="trailing" id="bJh-nt-8JI"/>
+                            <constraint firstItem="9Ba-AV-X4J" firstAttribute="leading" secondItem="DzZ-j6-at5" secondAttribute="leading" constant="40" id="sna-GH-frT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DzZ-j6-at5"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="clearButton" destination="T13-xs-3EX" id="ENh-AX-cPH"/>
+                        <outlet property="collageView" destination="9Ba-AV-X4J" id="FIW-Dy-FMg"/>
+                        <outlet property="saveButton" destination="n5P-d6-bR6" id="yef-p7-9nI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2QS-wD-zdq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3920.8000000000002" y="124.58770614692655"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="8Uu-o0-FdS">
             <objects>

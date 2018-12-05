@@ -51,7 +51,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             let chapterThreeVC = ChapterThreeViewController.initialize(from: .main)
             chapterThreeVC.viewModel = ChapterThreeViewModel(bag: DisposeBag())
             self.navigationController?.pushViewController(chapterThreeVC, animated: true)
-
+            
+        case .combinestagram:
+            let combinestagramVC = CombinestagramViewController.initialize(from: .main)
+            combinestagramVC.viewModel = CombinestagramViewModel(bag: DisposeBag())
+            self.navigationController?.pushViewController(combinestagramVC, animated: true)
+            
         }
 
         tableView.deselectRow(at: indexPath, animated: true)

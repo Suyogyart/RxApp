@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AFB70E321B7DD6700C43D14 /* CombinestagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFB70E221B7DD6700C43D14 /* CombinestagramViewController.swift */; };
+		6AFB70E521B7DD7600C43D14 /* CombinestagramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFB70E421B7DD7600C43D14 /* CombinestagramViewModel.swift */; };
 		744DEE4F04E5AA8D4BAFC3BA /* Pods_RxApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1441F27BDC02533283E827 /* Pods_RxApp.framework */; };
 		A73206A221B3B48300F5EEA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73206A121B3B48300F5EEA6 /* AppDelegate.swift */; };
 		A73206A421B3B48300F5EEA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73206A321B3B48300F5EEA6 /* MainViewController.swift */; };
@@ -27,6 +29,8 @@
 
 /* Begin PBXFileReference section */
 		1B6C383D28F1D1F91CB3F33F /* Pods-RxApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxApp/Pods-RxApp.release.xcconfig"; sourceTree = "<group>"; };
+		6AFB70E221B7DD6700C43D14 /* CombinestagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinestagramViewController.swift; sourceTree = "<group>"; };
+		6AFB70E421B7DD7600C43D14 /* CombinestagramViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinestagramViewModel.swift; sourceTree = "<group>"; };
 		6D1441F27BDC02533283E827 /* Pods_RxApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A732069E21B3B48300F5EEA6 /* RxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A73206A121B3B48300F5EEA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +71,15 @@
 				1B6C383D28F1D1F91CB3F33F /* Pods-RxApp.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		6AFB70E121B7DCE100C43D14 /* ChapterFourCombinestagram */ = {
+			isa = PBXGroup;
+			children = (
+				6AFB70E221B7DD6700C43D14 /* CombinestagramViewController.swift */,
+				6AFB70E421B7DD7600C43D14 /* CombinestagramViewModel.swift */,
+			);
+			path = ChapterFourCombinestagram;
 			sourceTree = "<group>";
 		};
 		9AF32F4AE30B93A8B8960C80 /* Frameworks */ = {
@@ -120,6 +133,7 @@
 		A73206B821B3B83D00F5EEA6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6AFB70E121B7DCE100C43D14 /* ChapterFourCombinestagram */,
 				A73206C921B3D93C00F5EEA6 /* ChapterThreeSubjects */,
 				A73206C421B3C2A200F5EEA6 /* ChapterTwoObservables */,
 				A73206BA21B3B87200F5EEA6 /* Main */,
@@ -250,12 +264,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RxApp/Pods-RxApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CollageView/CollageView.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollageView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
@@ -297,6 +313,8 @@
 				A73206B621B3B5B400F5EEA6 /* MainTitle.swift in Sources */,
 				A73206CD21B3D95700F5EEA6 /* ChapterThreeViewModel.swift in Sources */,
 				A73206C321B3C14700F5EEA6 /* RxHelper.swift in Sources */,
+				6AFB70E321B7DD6700C43D14 /* CombinestagramViewController.swift in Sources */,
+				6AFB70E521B7DD7600C43D14 /* CombinestagramViewModel.swift in Sources */,
 				A73206BC21B3B8A100F5EEA6 /* ChapterOneViewController.swift in Sources */,
 				A73206A221B3B48300F5EEA6 /* AppDelegate.swift in Sources */,
 				A73206C821B3C2C400F5EEA6 /* ChapterTwoViewModel.swift in Sources */,

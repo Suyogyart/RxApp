@@ -21,7 +21,8 @@ class MainViewModel {
         let titles: [MainTitle] = [
             MainTitle(title: "Hello RxSwift", destinationIdentifier: "ChapterOneViewController"),
             MainTitle(title: "Observables", destinationIdentifier: "ChapterTwoViewController"),
-            MainTitle(title: "Subjects", destinationIdentifier: "ChapterThreeViewController")
+            MainTitle(title: "Subjects", destinationIdentifier: "ChapterThreeViewController"),
+            MainTitle(title: "Combinestagram", destinationIdentifier: "CombinestagramViewController")
         ]
 
         self.titles = titles

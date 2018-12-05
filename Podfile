@@ -8,5 +8,7 @@ target 'RxApp' do
   # Pods for RxApp
   pod 'RxSwift'
   pod 'RxCocoa'
+  
+  pod 'CollageView'
 
 end

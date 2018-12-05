@@ -17,4 +17,5 @@ enum TitleName: Int {
     case chapterOne = 0
     case chapterTwo
     case chapterThree
+    case combinestagram
 }
