@@ -11,6 +11,7 @@
 		6A37A10D21B91E8D00BF7930 /* PhotoWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A10C21B91E8D00BF7930 /* PhotoWriter.swift */; };
 		6A37A11021B9352D00BF7930 /* ChapterFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A10F21B9352D00BF7930 /* ChapterFiveViewController.swift */; };
 		6A37A11221B9354600BF7930 /* ChapterFiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A11121B9354600BF7930 /* ChapterFiveViewModel.swift */; };
+		6A37A11521B93BB300BF7930 /* AnimatedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A37A11421B93BB300BF7930 /* AnimatedButton.swift */; };
 		6AFB70E321B7DD6700C43D14 /* CombinestagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFB70E221B7DD6700C43D14 /* CombinestagramViewController.swift */; };
 		6AFB70E521B7DD7600C43D14 /* CombinestagramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFB70E421B7DD7600C43D14 /* CombinestagramViewModel.swift */; };
 		744DEE4F04E5AA8D4BAFC3BA /* Pods_RxApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D1441F27BDC02533283E827 /* Pods_RxApp.framework */; };
@@ -37,6 +38,7 @@
 		6A37A10C21B91E8D00BF7930 /* PhotoWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWriter.swift; sourceTree = "<group>"; };
 		6A37A10F21B9352D00BF7930 /* ChapterFiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFiveViewController.swift; sourceTree = "<group>"; };
 		6A37A11121B9354600BF7930 /* ChapterFiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterFiveViewModel.swift; sourceTree = "<group>"; };
+		6A37A11421B93BB300BF7930 /* AnimatedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedButton.swift; sourceTree = "<group>"; };
 		6AFB70E221B7DD6700C43D14 /* CombinestagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinestagramViewController.swift; sourceTree = "<group>"; };
 		6AFB70E421B7DD7600C43D14 /* CombinestagramViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombinestagramViewModel.swift; sourceTree = "<group>"; };
 		6D1441F27BDC02533283E827 /* Pods_RxApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,6 +100,14 @@
 			path = ChapterFiveFilteringOperators;
 			sourceTree = "<group>";
 		};
+		6A37A11321B93B8500BF7930 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				6A37A11421B93BB300BF7930 /* AnimatedButton.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
 		6AFB70E121B7DCE100C43D14 /* ChapterFourCombinestagram */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +147,7 @@
 		A73206A021B3B48300F5EEA6 /* RxApp */ = {
 			isa = PBXGroup;
 			children = (
+				6A37A11321B93B8500BF7930 /* CustomClasses */,
 				A73206BF21B3BE3700F5EEA6 /* Helpers */,
 				A73206B821B3B83D00F5EEA6 /* Modules */,
 				A73206B721B3B82B00F5EEA6 /* Supporting */,
@@ -335,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A73206CB21B3D94B00F5EEA6 /* ChapterThreeViewController.swift in Sources */,
+				6A37A11521B93BB300BF7930 /* AnimatedButton.swift in Sources */,
 				A73206A421B3B48300F5EEA6 /* MainViewController.swift in Sources */,
 				A73206BE21B3BD0900F5EEA6 /* ChapterOneViewModel.swift in Sources */,
 				6A37A10D21B91E8D00BF7930 /* PhotoWriter.swift in Sources */,
