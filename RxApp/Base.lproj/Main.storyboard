@@ -139,6 +139,12 @@
                                     <constraint firstAttribute="height" constant="250" id="2Ff-Tb-I7q"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No photos added. Click on '+' to add photos." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxZ-IV-pZu">
+                                <rect key="frame" x="40" y="208.5" width="295" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="A4N-BU-HRQ">
                                 <rect key="frame" x="40" y="394" width="295" height="30"/>
                                 <subviews>
@@ -162,9 +168,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="A4N-BU-HRQ" firstAttribute="top" secondItem="9Ba-AV-X4J" secondAttribute="bottom" constant="40" id="0vz-RT-vIQ"/>
+                            <constraint firstItem="sxZ-IV-pZu" firstAttribute="centerX" secondItem="9Ba-AV-X4J" secondAttribute="centerX" id="9Zp-5N-w5v"/>
+                            <constraint firstItem="sxZ-IV-pZu" firstAttribute="leading" secondItem="9Ba-AV-X4J" secondAttribute="leading" id="Ha8-Ll-2ZW"/>
                             <constraint firstItem="A4N-BU-HRQ" firstAttribute="leading" secondItem="9Ba-AV-X4J" secondAttribute="leading" id="LUa-JF-iLW"/>
                             <constraint firstItem="9Ba-AV-X4J" firstAttribute="centerX" secondItem="jJq-Eo-cc9" secondAttribute="centerX" id="P7M-HP-WyE"/>
                             <constraint firstItem="9Ba-AV-X4J" firstAttribute="top" secondItem="DzZ-j6-at5" secondAttribute="top" constant="40" id="SVY-Z5-00m"/>
+                            <constraint firstItem="sxZ-IV-pZu" firstAttribute="centerY" secondItem="9Ba-AV-X4J" secondAttribute="centerY" id="Tcg-i1-oXG"/>
                             <constraint firstItem="A4N-BU-HRQ" firstAttribute="trailing" secondItem="9Ba-AV-X4J" secondAttribute="trailing" id="bJh-nt-8JI"/>
                             <constraint firstItem="9Ba-AV-X4J" firstAttribute="leading" secondItem="DzZ-j6-at5" secondAttribute="leading" constant="40" id="sna-GH-frT"/>
                         </constraints>
@@ -176,6 +185,7 @@
                     <connections>
                         <outlet property="clearButton" destination="T13-xs-3EX" id="ENh-AX-cPH"/>
                         <outlet property="collageView" destination="9Ba-AV-X4J" id="FIW-Dy-FMg"/>
+                        <outlet property="noPhotoLabel" destination="sxZ-IV-pZu" id="dQ9-XW-A3q"/>
                         <outlet property="saveButton" destination="n5P-d6-bR6" id="yef-p7-9nI"/>
                     </connections>
                 </viewController>

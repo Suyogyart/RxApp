@@ -14,6 +14,7 @@ class CombinestagramViewModel {
     
     let testImagesArray: [UIImage] = [#imageLiteral(resourceName: "blueRose"),#imageLiteral(resourceName: "railRoad"),#imageLiteral(resourceName: "peacockFeathers"),#imageLiteral(resourceName: "earth")]
     let images = BehaviorRelay<[UIImage]>(value: [])
+    var emptyLabel = BehaviorRelay<String>(value: "")
     
     var disposeBag: DisposeBag!
     
@@ -22,9 +23,47 @@ class CombinestagramViewModel {
         
     }
     
+    /// Fills test images initially
     func fillTestImages() {
         let imagesArray: [UIImage] = [#imageLiteral(resourceName: "blueRose"),#imageLiteral(resourceName: "railRoad"),#imageLiteral(resourceName: "peacockFeathers"),#imageLiteral(resourceName: "earth")]
         
         images.accept(imagesArray)
     }
+    
+    
+    /// Adds new image
+    ///
+    /// - Parameter image: Image to add
+    /// - Returns: An observable
+    func addNew(image: UIImage) -> Observable<Void> {
+        
+        return Observable<Void>.create { (observer) -> Disposable in
+            var currentImageArray = self.images.value
+            currentImageArray.append(image)
+            
+            self.images.accept(currentImageArray)
+            observer.onCompleted()
+            
+            return Disposables.create()
+        }
+    }
+    
+    
+    /// Removes image from given index
+    ///
+    /// - Parameter index: Index at which the image needs to be removed
+    func removeImage(at index: Int) {
+        var currentImageArray = self.images.value
+        currentImageArray.remove(at: index)
+        
+        self.images.accept(currentImageArray)
+    }
+    
+    
+    /// Remove all images
+    func removeAllImages() {
+        self.images.accept([])
+    }
+    
+    
 }
