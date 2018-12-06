@@ -36,7 +36,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch TitleName(rawValue: indexPath.row)! {
+        
+        guard let titleName = TitleName(rawValue: indexPath.row) else { return }
+        
+        switch titleName {
+            
         case .chapterOne:
             let chapterOneVC = ChapterOneViewController.initialize(from: .main)
             chapterOneVC.viewModel = ChapterOneViewModel(bag: DisposeBag())
@@ -56,6 +60,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             let combinestagramVC = CombinestagramViewController.initialize(from: .main)
             combinestagramVC.viewModel = CombinestagramViewModel(bag: DisposeBag())
             self.navigationController?.pushViewController(combinestagramVC, animated: true)
+            
+        case .chapterFive:
+            let chapterFiveVC = ChapterFiveViewController.initialize(from: .main)
+            chapterFiveVC.viewModel = ChapterFiveViewModel(bag: DisposeBag())
+            self.navigationController?.pushViewController(chapterFiveVC, animated: true)
             
         }
 

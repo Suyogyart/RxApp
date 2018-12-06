@@ -14,7 +14,6 @@ class CombinestagramViewModel {
     
     let testImagesArray: [UIImage] = [#imageLiteral(resourceName: "blueRose"),#imageLiteral(resourceName: "railRoad"),#imageLiteral(resourceName: "peacockFeathers"),#imageLiteral(resourceName: "earth")]
     let images = BehaviorRelay<[UIImage]>(value: [])
-    var emptyLabel = BehaviorRelay<String>(value: "")
     
     var disposeBag: DisposeBag!
     

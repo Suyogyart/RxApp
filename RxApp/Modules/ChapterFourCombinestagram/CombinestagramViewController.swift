@@ -59,7 +59,7 @@ class CombinestagramViewController: UIViewController {
         
         // Observe on clear button tap
         clearButton.rx.tap.subscribe { [weak self] _ in
-            self?.clearAllImages()
+            self?.clearAllImages() 
         }.disposed(by: viewModel.disposeBag)
         
         // Observe on save button tap
