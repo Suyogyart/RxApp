@@ -30,6 +30,7 @@ class MainViewModel {
     }
 
     func getCellTitle(forIndex index: Int) -> String {
-        return "\(index + 1). \(titles[index].title)"
+        let localizedTitle = NSLocalizedString("\(index + 1). \(titles[index].title)", comment: "")
+        return localizedTitle
     }
 }

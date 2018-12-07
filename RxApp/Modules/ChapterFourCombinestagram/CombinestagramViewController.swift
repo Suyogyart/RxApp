@@ -74,6 +74,9 @@ class CombinestagramViewController: UIViewController {
         
         clearButton.isEnabled = photos.count > 0
         saveButton.isEnabled = photos.count > 0
+        clearButton.backgroundColor = clearButton.isEnabled ? .clearButtonEnabled : .buttonDisabled
+        saveButton.backgroundColor = saveButton.isEnabled ? .saveButtonEnabled : .buttonDisabled
+        
         addBarButtonItem.isEnabled = photos.count < 6
         
         noPhotoLabel.text = "No photos added.\nClick on '+' to add photos."

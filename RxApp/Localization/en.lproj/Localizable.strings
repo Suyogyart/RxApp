@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  RxApp
+
+  Created by srt on 12/7/18.
+  Copyright © 2018 Suyogya Ratna Tamrakar. All rights reserved.
+*/
+
+// Main Title
+"1. Hello RxSwift" = "1. Hello RxSwift";
+"2. Observables"   = "2. Observables";
+"3. Subjects"      = "3. Subjects";
+"4. Combinestagram" = "4. Combinestagram";
+"5. Filtering Operators" = "5. Filtering Operators";

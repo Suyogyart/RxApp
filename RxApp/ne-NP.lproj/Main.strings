@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Clear"; ObjectID = "T13-xs-3EX"; */
+"T13-xs-3EX.normalTitle" = "Clear";
+
+/* Class = "UINavigationItem"; title = "RxApp"; ObjectID = "daq-To-6NT"; */
+"daq-To-6NT.title" = "RxApp";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "gpf-6X-yy9"; */
+"gpf-6X-yy9.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Save"; ObjectID = "n5P-d6-bR6"; */
+"n5P-d6-bR6.normalTitle" = "Save";
+
+/* Class = "UILabel"; text = "No photos added. Click on '+' to add photos."; ObjectID = "sxZ-IV-pZu"; */
+"sxZ-IV-pZu.text" = "No photos added. Click on '+' to add photos.";

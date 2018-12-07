@@ -21,13 +21,5 @@ class AnimatedButton: UIButton {
             }, completion: nil)
         }
     }
-    
-    override var isEnabled: Bool {
-        willSet(enabled) {
-            let currentColor = self.backgroundColor
-            
-            backgroundColor = enabled ? currentColor : .gray
-        }
-    }
 
 }

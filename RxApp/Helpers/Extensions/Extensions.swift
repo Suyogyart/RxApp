@@ -67,3 +67,11 @@ extension UIImage {
     }
     
 }
+
+extension UIColor {
+    
+    class var saveButtonEnabled: UIColor { return #colorLiteral(red: 0, green: 0.5628422499, blue: 0.3188166618, alpha: 1) }
+    class var clearButtonEnabled: UIColor { return #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1) }
+    class var buttonDisabled: UIColor { return .gray }
+    
+}
