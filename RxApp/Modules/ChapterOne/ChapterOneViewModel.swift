@@ -16,4 +16,6 @@ class ChapterOneViewModel {
     init(bag: DisposeBag) {
         self.disposeBag = bag
     }
+    
+    
 }

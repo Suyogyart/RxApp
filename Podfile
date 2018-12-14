@@ -10,5 +10,8 @@ target 'RxApp' do
   pod 'RxCocoa'
   
   pod 'CollageView'
+  pod 'SwiftGifOrigin'
+  pod 'SwiftyGif'
+  pod 'TOMSMorphingLabel'
 
 end
